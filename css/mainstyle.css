@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* CSS Variables */
+
+:root {
+  /* Howest colors */
+  --blue: #44C8F5;
+  --white: #FEFFFF;
+  --pink: #EC008C;
+  --lightpink: #F9B2DC;
+  --yellow: #FFED00;
+  --lighyellow: #fffded;
+  --green: #009A93;
+  --lightgreen: #EAF5F5;
+  --black: #000000;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--lighyellow);
+  color: var(--black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--blue);
+}
+
+/* Buttons */
+
+button {
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-style: solid;
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+.btn-yellow {
+  border-color: var(--yellow);
+  background-color: var(--lighyellow);
+  color: var(--black);
+}
+
+.btn-yellow:focus {
+  border-color: var(--blue);
+}
+
+.btn-green {
+    border-color: var(--green);
+    background-color: var(--lightgreen);
+    color: var(--black);
+}
+  
+.btn-green:hover {
+    background-color: var(--green);
+}
+
+.btn-brown {
+    border-color: #c46a04;
+    background-color: #e7b378;
+    color: var(--black);
+}
+  
+.btn-brown:hover {
+    background-color: #c46a04;
+}
+
+.btn-yellow:hover {
+  background-color: var(--yellow);
+}
+
+.btn-pink {
+  border-color: var(--pink);
+  background-color: var(--lightpink);
+  color: var(--black);
+}
+
+.btn-pink:focus {
+  border-color: var(--blue);
+}
+
+.btn-pink:hover {
+  background-color: var(--pink);
+  color: var(--white);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+#imagecontainer {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+#buttoncontainer {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+}
+
+#imagecontainer > img {
+    position: absolute;
+    overflow: hidden;
+    animation: fly 5s infinite ease-out;
+    -webkit-filter: drop-shadow( 10px 10px 4px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 10px 10px 4px rgba(0, 0, 0, .7));
+    
+}
+
+#imagecontainer :nth-child(1) {
+    left: 0;
+    top: -25%;
+}
+
+#imagecontainer :nth-child(2) {
+    left: 20%;
+    top: -40%;
+}
+
+#imagecontainer :nth-child(3) {
+    left: 40%;
+    top: -50%;
+}
+
+#imagecontainer :nth-child(4) {
+    left: 60%;
+    top: -35%;
+}
+
+#imagecontainer :nth-child(5) {
+    left: 80%;
+    top: -80%;
+}
+
+
+
+@keyframes fly {
+    0% {
+        transform: rotateZ(0deg);        
+    }
+
+    100% {
+        transform: translateY(800%) rotateZ(45deg);
+    }
+}
