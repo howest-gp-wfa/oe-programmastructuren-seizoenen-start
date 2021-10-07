@@ -88,7 +88,7 @@ html, body {
     margin: 0;
     padding: 0;
 }
-#imagecontainer {
+#image-container {
     overflow: hidden;
     position: absolute;
     width: 100%;
@@ -96,7 +96,7 @@ html, body {
     top: 0;
 }
 
-#buttoncontainer {
+#button-container {
     overflow: hidden;
     position: absolute;
     width: 100%;
@@ -112,7 +112,7 @@ img {
     width: 200px;
 }
 
-#imagecontainer > img {
+#image-container > img {
     position: absolute;
     overflow: hidden;
     animation: fly 5s infinite ease-out;
@@ -121,27 +121,27 @@ img {
     
 }
 
-#imagecontainer :nth-child(1) {
+#image-container :nth-child(1) {
     left: 0;
     top: -25%;
 }
 
-#imagecontainer :nth-child(2) {
+#image-container :nth-child(2) {
     left: 20%;
     top: -40%;
 }
 
-#imagecontainer :nth-child(3) {
+#image-container :nth-child(3) {
     left: 40%;
     top: -50%;
 }
 
-#imagecontainer :nth-child(4) {
+#image-container :nth-child(4) {
     left: 60%;
     top: -35%;
 }
 
-#imagecontainer :nth-child(5) {
+#image-container :nth-child(5) {
     left: 80%;
     top: -80%;
 }
